@@ -6,26 +6,33 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import { Cover } from "./ui/cover";
 
 export function FeatureSection() {
   return (
-    <BentoGrid className="max-w-7xl w-full p-5 mx-auto md:auto-rows-[20rem]">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          className={item.className}
-          icon={item.icon}
-        />
-      ))}
-    </BentoGrid>
+    <div className="max-w-7xl w-full p-5 mx-auto flex flex-col items-center justify-center">
+      <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-10 bg-clip-text text-transparent bg-gradient-to-b from-primary via-foreground to-primary-foreground">
+        One Interface. Every <Cover>Data Source</Cover>
+      </h1>
+      <BentoGrid className="md:auto-rows-[20rem]">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.header}
+            className={item.className}
+            icon={item.icon}
+          />
+        ))}
+      </BentoGrid>
+    </div>
   );
 }
 const Skeleton = () => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
 );
+
 const items = [
   {
     title: "SheetSpeak - Talk to Your CSVs",
@@ -58,5 +65,5 @@ const items = [
     header: <Skeleton />,
     icon: <IconTableColumn className="h-4 w-4 text-card-foreground" />,
     className: "col-span-2",
-  }
+  },
 ];

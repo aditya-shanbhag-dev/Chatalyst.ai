@@ -46,10 +46,12 @@ export default function HeroSection() {
             duration: 0.3,
             delay: 0.8,
           }}
-          className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-secondary-foreground font-serif"
+          className="relative z-10 mx-auto max-w-2xl py-4 text-center text-lg font-normal text-secondary-foreground font-serif"
         >
           Upload a CSV, PDF, API, or webpage — and just ask questions in plain
-          English. No SQL. No scraping. No technical setup.
+          English.
+          <br />
+          No SQL. No scraping. No technical setup.
         </motion.p>
         <motion.div
           initial={{

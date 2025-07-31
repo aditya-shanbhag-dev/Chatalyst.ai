@@ -23,7 +23,7 @@ export default function NavBar() {
             Chatalyst.ai
           </div>
         </div>
-        <div className="mr-3 flex items-center justify-center gap-3">
+        <div className="mr-3 flex items-center justify-center gap-5">
           <ModeToggle />
           <SignedOut>
             <SignInButton />
