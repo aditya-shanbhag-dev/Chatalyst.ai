@@ -5,8 +5,8 @@ import ColourfulText from "./ui/colourful-text";
 
 export default function TechStackSection() {
   return (
-    <div className="py-20 max-w-7xl w-full flex flex-col items-center gap-10 mx-auto">
-      <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center text-primary relative z-10 font-serif text-shadow-lg">
+    <div className="max-w-7xl w-full flex flex-col items-center gap-10 mx-auto">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-primary relative z-10 font-serif text-shadow-lg">
         The Stack Behind the <ColourfulText text="Magic" />
       </h1>
       <Marquee className="max-w-7xl w-full">

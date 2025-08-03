@@ -5,6 +5,7 @@ import { FeatureSection } from "@/components/FeatureSection";
 import { ZeroSection } from "@/components/ZeroSection";
 import UseCaseSection from "@/components/UseCaseSection";
 import TechStackSection from "@/components/TechStackSection";
+import SupportSection from "@/components/SupportSection";
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
       <NavBar />
       <HeroSection />
       <FeatureSection />
-      <UseCaseSection/>
+      <UseCaseSection />
       <ZeroSection />
+      <SupportSection />
       <TechStackSection />
       <Footer />
     </main>

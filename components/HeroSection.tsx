@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 export default function HeroSection() {
   return (
     <div className="relative max-w-7xl mx-auto bg-background w-full pt-20">
@@ -76,7 +77,7 @@ export default function HeroSection() {
             variant="outline"
             className="hover:-translate-y-1 cursor-pointer"
           >
-            Contact Support
+            <Link href="#SupportSection">Contact Support</Link>
           </Button>
         </motion.div>
       </div>
