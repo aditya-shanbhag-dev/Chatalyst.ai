@@ -22,7 +22,7 @@ export default function FAQSection() {
           <AccordionContent className="flex flex-col gap-4 text-balance">
             <p>
               This platform turns static data into dynamic conversations.
-              Whether you're a business analyst, researcher, developer, or
+              Whether you&apos;re a business analyst, researcher, developer, or
               growth hacker, you can chat with spreadsheets, documents, APIs,
               and even live web pages.
             </p>
@@ -60,7 +60,7 @@ export default function FAQSection() {
         </AccordionItem>
 
         <AccordionItem value="faq-4">
-          <AccordionTrigger>How does "Talk to Your CSV" work?</AccordionTrigger>
+          <AccordionTrigger>How does &quot;Talk to Your CSV&quot; work?</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
             <p>Upload a CSV file and our AI:</p>
             <ul className="list-disc list-inside">
